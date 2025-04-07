@@ -1,9 +1,16 @@
 <h1>Caregiving Management Platform</h1>
 
 This is software designed for caregiving businesses to promote and manage their talents and services.<br>
-Latest Update: Migrated from SQLite3 to PostgreSQL.<br>
 
-PostgreSQL Setup
+**Latest Update(s):** Initial commit of overdue local progress. Migrated from SQLite3 to PostgreSQL.<br>
+
+**Developer Note:** This is my next big project, which I started in the beginning of March 2025. 
+I've been working as a hospice caregiver fulltime and developing this app on the side. 
+I'll be slowly rolling out features/updates and hopefully a working version of the site for caregivers and clients to use. 
+The expect release of a working version is around early May 2025. 
+I'm also down developer power. So, if anyone wants to join in, please let me know.
+
+<h3>PxostgreSQL Setup</h3>
 
 ```bash
 brew install postgresql
@@ -14,7 +21,7 @@ psql -d postgres -f ./backend/functions/create_psql_admin.sql
 pip3 install psycopg2-binary
 ```
 
-Database Schema
+<h3>Database Schema</h3>
 
 ```sql
 CREATE TABLE user_accounts (
