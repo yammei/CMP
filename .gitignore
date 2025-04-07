@@ -12,3 +12,6 @@ node_modules
 # Databases
 *.db
 *db-journal
+
+# Misc.
+create_psql_admin.sql
