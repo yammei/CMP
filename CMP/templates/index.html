@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='stylings/styles.css') }}">
+        <script src="{{ url_for('static', filename='scripts/ui_scripts.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='scripts/api_requests.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='scripts/misc_functions.js') }}" type="text/javascript"></script>
+    </head>
+    <body id="main-page">
+        <div style="height: 50px;"></div>
+
+        <div id="navbar">
+            <div id="links">
+                <a class="navbar-links" href="#main-page">Home</a>
+                <a class="navbar-links" href="#about-us">About Us</a>
+                <a class="navbar-links" href="#services">Services</a>
+                <a class="navbar-links" href="#contacts">Contacts</a>
+                <a class="navbar-links" onclick="loadLoginSignupComponent()">My Account</a>
+            </div>
+        </div>
+
+        <div id="floating-component"></div>
+        <div id="floating-component-dark-background" style="display: none;" onclick="loadLoginSignupComponent()"></div>
+
+        <div class="banner-container" class="">
+            <p class="banner-title">the caregiving company.</p>
+        </div>
+
+        <div id="testing-component">
+            <p id="testing-component-title">TESTING COMPONENT</p>
+            <button class="testing-component-button" onclick="loadCaregiverCardComponent()">Add Card</button>
+            <button class="testing-component-button" onclick="insertCaregiver()">Insert Caregiver</button>
+            <button class="testing-component-button" onclick="retrieveCaregiver()">Retrieve Caregiver</button>
+        </div>
+
+        <p class="content-title">Meet Our Caregivers</p>
+        <div id="main-content">
+            <div id="caregiver-cards">
+                <div class="caregiver-card">
+                    <div class="caregiver-content">
+                        <img class="caregiver-picture">
+                        <div class="caregiver-texts-top-container">
+                            <p class="caregiver-name caregiver-texts">Jane Doe</p>
+                            <div style="margin: 0px auto"></div>
+                            <p class="caregiver-exerience caregiver-texts">9 YoE</p>
+                        </div>
+                        <p class="caregiver-description caregiver-texts">RCFE Caregiver with experience working with Alzheimer's/Dementia clients.</p>
+                    </div>
+                </div>
+
+                <div class="caregiver-card">
+                    <div class="caregiver-content">
+                        <img class="caregiver-picture">
+                        <div class="caregiver-texts-top-container">
+                            <p class="caregiver-name caregiver-texts">Jane Doe</p>
+                            <div style="margin: 0px auto"></div>
+                            <p class="caregiver-exerience caregiver-texts">9 YoE</p>
+                        </div>
+                        <p class="caregiver-description caregiver-texts">RCFE Caregiver with experience working with Alzheimer's/Dementia clients.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="medium-banner-container" class="">
+            <p class="banner-title">our mission to the community.</p>
+        </div>
+
+        <p class="content-title">About Us</p>
+        <div id="about-us">
+            <div id="about-us-picture">
+                <img>
+            </div>
+            <div id="about-us-texts">
+                <p id="about-us-header-text">Family Means No One Gets Left Behind</p>
+                <p id="about-us-description-text">I'm Jane Doe, founder of CareGivingCompany. With 40 years of experience in providing excellent care to thousands of clients in the greater San Francisco bay area, we'd like to extend our arms to you and your family to provide care, comfort, and compassion to your loved ones.</p>
+            </div>
+        </div>
+
+        <div class="medium-banner-container" class="">
+            <p class="banner-title">our expertise in providing daily comfort.</p>
+        </div>
+
+        <p class="content-title">Services</p>
+        <div id="services">
+            <div>
+                <p>CareGivingCompany provides an all in one platform for families to find and connect with experienced Caregivers and Certified Nursing Assistants (CNAs) that can help with a loved-one's unique needs.</p>
+                <ul class="services-lists">
+                    <li class="services-listed-item">General Companionship</li>
+                    <li class="services-listed-item">Alzheimer's/Dementia Care</li>
+                    <li class="services-listed-item">Mobility and Transportation Assistance</li>
+                    <li class="services-listed-item">Bed-Bound Bathing and Hygiene</li>
+                    <li class="services-listed-item">Hospice Care</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="medium-banner-container" class="">
+            <p class="banner-title">let your voice be heard.</p>
+        </div>
+
+        <p class="content-title">Contacts</p>
+        <div id="contacts">
+            <div id="contact-form">
+                <input id="contact-form-name-input" class="contact-form-input" placeholder="Full Name">
+                <input id="contact-form-email-input" class="contact-form-input"placeholder="Email">
+                <textarea id="contact-form-message-input" placeholder="Message"></textarea>
+                <button id="contact-form-submit-button">Submit</button>
+            </div>
+        </div>
+
+    </body>
+    <footer>
+        <div id="footer-container">
+            <div id="business-card">
+                <p class="business-card-text" style="font-size: 12pt; font-weight: 600; margin-top: auto; margin-bottom: 5px;">Jane Doe</p>
+                <p class="business-card-text" style="font-size: 9pt; margin-top: 5px; margin-bottom: 5px;">1234 North Main St., 98765, Sacramento, CA</p>
+                <p class="business-card-text" style="font-size: 9pt; margin-top: 5px; margin-bottom: 5px;">+1 (234) 567-8910</p>
+                <p class="business-card-text" style="font-size: 9pt; margin-top: 5px; margin-bottom: auto;">JaneDoe@CareGivingCompany.com</p>
+            </div>
+            <div id="footer-links">
+                <div class="footer-category">
+                    <p class="footer-category-title">Socials</p>
+                    <a class="footer-link">BlueSky</a>
+                    <a class="footer-link">Instagram</a>
+                    <a class="footer-link">Facebook</a>
+                    <a class="footer-link">TikTok</a>
+                </div>
+                <div class="footer-category">
+                    <p class="footer-category-title">Professional</p>
+                    <a class="footer-link">Affiliates</a>
+                    <a class="footer-link">Corporate</a>
+                    <a class="footer-link">Careers</a>
+                    <a class="footer-link">Pirvacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <p id="footer-note">Copyright 2025, CareGivingCompany. All rights Reserved.</p>
+        <p id="footer-note">Website developed by May Zhang.</p>
+    </footer>
+</html>

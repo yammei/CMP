@@ -1,0 +1,9 @@
+APP_NAME = Caregiving Management Platform
+VENV_NAME = .venv
+REQUIREMENTS_FILE = requirements.txt
+FLASK_APP = app.py
+
+setup:
+	python3 -m venv .venv
+	./venv/bin/pip install --upgrade pip
+	./

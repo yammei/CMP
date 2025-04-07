@@ -1,0 +1,456 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: rgb(50, 50, 50);
+}
+p {
+    color: rgb(25, 25, 25);
+}
+p, a, li {
+    font-family:Arial, Helvetica, sans-serif;
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 15px 20px;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, .25);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    z-index: 99999;
+}
+.navbar-links {
+    cursor: pointer;
+    color: rgb(50, 50, 50);
+    font-size: 10pt;
+    text-decoration: none;
+    margin: 5px 20px;
+}
+.navbar-links:hover {
+    color: rgb(10, 10, 10);
+}
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 57, 192);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.banner-title {
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    font-size: 24pt;
+    font-weight: 600;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+.medium-banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: rgb(0, 57, 192);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.content-title {
+    color: rgb(25, 25, 25);
+    font-size: 18pt;
+    font-weight: 600;
+}
+
+#testing-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 600px;
+    padding: 25px;
+    border: 3px dashed rgb(200, 200, 200);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.testing-component-button {
+    cursor: pointer;
+    color: rgb(225, 225, 225);
+    font-size: 12pt;
+    font-weight: 600;
+    height: fit-content;
+    width: 300px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: rgb(0, 57, 192);
+    border-radius: 999px;
+    outline: none;
+    border: none;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+.testing-component-button:hover {
+    background-color: rgb(0, 43, 143);
+}
+#caregiver-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+    justify-content: space-between;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+.caregiver-card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(225, 225, 225);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    transition: scale .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out;
+    -webkit-transition: scale .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out;
+    -moz-transition: scale .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out;
+    -ms-transition: scale .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out;
+    -o-transition: scale .25s ease-in-out, background-color .25s ease-in-out, border .25s ease-in-out;
+}
+.caregiver-card:hover {
+    scale: 1.025;
+    background-color: rgb(171, 187, 226);
+    border: 2px solid rgba(0, 57, 192, 1);
+}
+.caregiver-content {
+    margin: auto;
+}
+.caregiver-picture {
+    height: 150px;
+    width: 150px;
+    margin: 5px 0px;
+    background-color: rgb(200, 200, 200);
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.caregiver-texts-top-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 150px;
+    margin-top: 5px;
+}
+.caregiver-texts {
+    height: fit-content;
+    width: fit-content;
+    margin: 5px 0px;
+}
+.caregiver-name {
+    font-size: 11pt;
+    font-weight: 600;
+}
+.caregiver-experience {
+    font-size: 11pt;
+}
+.caregiver-description {
+    font-size: 10pt;
+    width: 150px;
+}
+#about-us {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 600px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#about-us-picture {
+    height: 175px;
+    width: 175px;
+    margin: auto;
+    background-color: rgb(200, 200, 200);
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, .2);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+#about-us-texts {
+    height: fit-content;
+    width: 400px;
+    margin: auto 0px;
+    margin-right: auto;
+    margin-left: 10px;
+}
+#about-us-header-text {
+    font-size: 13pt;
+    font-weight: 600;
+    margin: 5px 0px;
+}
+#about-us-description-text {
+    font-size: 11pt;
+    height: fit-content;
+    width: fit-content;
+    margin: 5px 0px;
+}
+#services {
+    width: 600px;
+}
+.services-lists {
+    margin-bottom: 50px;
+}
+.services-listed-item {
+    font-size: 11pt;
+}
+#contact-form {
+
+}
+.contact-form-input {
+    text-align: center;
+    height: 40px;
+    width: 500px;
+    margin: 10px auto;
+    margin-left: 0px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, .2);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#contact-form-message-input {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100px;
+    max-height: 400px;
+    min-width: 500px;
+    max-width: 500px;
+    width: 500px;
+    margin: 10px 0px;
+    background-color: rgb(235, 235, 235);
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, .2);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#contact-form-submit-button {
+    cursor: pointer;
+    color: rgb(250, 250, 250);
+    height: 40px;
+    width: 500px;
+    margin: 10px;
+    background-color: rgb(0, 57, 192);
+    border: none;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+#contact-form-submit-button:hover {
+    background-color: rgb(0, 43, 143);
+}
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    margin: auto;
+}
+#business-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    padding: 50px 20px;
+    background-color: rgb(35, 35, 35);
+    box-shadow: 3px 5px 1px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.business-card-text {
+    color: rgb(250, 250, 250);
+    text-align: left;
+    margin-left: 20px;
+}
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 50px;;
+}
+.footer-category {
+    display: flex;
+    flex-direction: column;
+    margin: auto 25px;
+}
+.footer-category-title {
+    color: rgb(250, 250, 250);
+    font-size: 12pt;
+    font-weight: 600;
+    text-align: right;
+    margin: 7.5px;
+}
+.footer-link {
+    cursor: pointer;
+    color: rgb(225, 225, 225);
+    font-size: 10pt;
+    text-align: right;
+    margin: 5px;
+}
+.footer-link:hover {
+    color: rgb(200, 200, 200);
+}
+#footer-note {
+    color: rgb(200, 200, 200);
+    font-size: 8pt;
+    margin: 2px auto;
+}
+
+#floating-component {
+    position: fixed;
+    margin-top: 100px;
+    box-shadow: 3px 5px 1px rgba(0, 0, 0, .2);
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: 9999;
+}
+#floating-component-dark-background {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(2px);
+    z-index: 9998;
+}
+#login-signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 300px;
+    padding: 25px;
+}
+#login-signup-title {
+    color: rgb(100, 100, 100);
+    margin: 5px;
+}
+.login-signup-input {
+    text-align: center;
+    height: 40px;
+    width: 250px;
+    margin: 10px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: inset 1px 2px 1px rgba(0, 0, 0, .2);
+    outline: none;
+    border: none;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+#login-signup-show-password-text {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    color: rgb(100, 100, 100);
+    font-size: 9pt;
+    text-align: right;
+    width: 250px;
+    margin: 2px 0px;
+}
+#login-signup-show-password-text:hover {
+    color: rgb(50, 50, 50);
+}
+#login-signup-submit-button {
+    cursor: pointer;
+    color: rgb(250, 250, 250);
+    height: 40px;
+    width: 250px;
+    margin: 10px;
+    background-color: rgb(0, 57, 192);
+    border: none;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+#login-signup-submit-button:hover {
+    background-color: rgb(0, 43, 143);
+}
+#login-signup-options {
+    cursor: pointer;
+    color: rgb(37, 80, 182);
+    font-size: 10pt;
+    margin: 5px;
+}
+#login-signup-options:hover {
+    color: rgb(21, 61, 155);
+}

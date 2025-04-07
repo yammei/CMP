@@ -1,0 +1,14 @@
+# Caches
+.DS_Store
+__pycache__
+
+# Dependencies
+.venv
+node_modules
+
+# Keys
+.env
+
+# Databases
+*.db
+*db-journal
